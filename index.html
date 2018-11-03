@@ -21,7 +21,7 @@ body, html {
 }
 
 .flip-card-inner {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -66,6 +66,8 @@ body, html {
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment : fixed;
+    display : flex ;
+    flex-direction: column;
     
 }
 
@@ -148,8 +150,8 @@ background-image : url("https://drive.google.com/uc?export=view&id=1MkKjBjMdk7Wp
 
 <script>
 $(document).ready(function () {
-     var winHeight = $(window).height();
-     $('#mainDiv').css('height', winHeight + 'px');
+     var winHeight = $(window).height()+ 400;
+     $('#mainDiv').css('height', winHeight + 'px')
 });
 </script>
 
@@ -161,6 +163,30 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+</script>
+
+<script>
+
+var countDownDate = new Date("Dec 02, 2018 09:00:00").getTime();
+
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    
+    var distance = countDownDate - now;
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById("cntDwn").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Engaged !!!";
+    }
+}, 1000);
 </script>
 
 </head>
@@ -180,7 +206,11 @@ function closeNav() {
 <span style="font-size:30px;cursor:pointer; color : red;" onclick="openNav()">&#9776;</span>
 
 <h3> Engagement invite</h3>
+<h3> Engagement invite</h3>
+<h3> Engagement invite</h3>
 
+<h3> Engagement invite</h3>
+<h3> Engagement invite</h3>
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -191,6 +221,11 @@ function closeNav() {
     </div>
   </div>
 </div>
+
+<div style="margin-top : 5px ;background : #fff;box-shadow: 0 4px 8px 0 ;rgba(0,0,0,0.2);">
+<span id="cntDwn" style="font-size:30px; color : red;"</span>
+
+<div/>
 
 
 
