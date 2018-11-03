@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -8,10 +9,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <style>
+body, html {
+    height: 100%;
+}
+
 .flip-card {
   background-color: transparent;
-  width: 400px;
-  height: 640px;
+  width: 100%;
+  height: 80%;
   perspective: 1000px;
 }
 
@@ -26,7 +31,7 @@
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
 }
 
 .flip-card-front, .flip-card-back {
@@ -43,37 +48,126 @@
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  
   color: white;
-  transform: rotateY(180deg);
+  background-image : url("https://drive.google.com/uc?export=view&id=1MkKjBjMdk7WpZDqhhhxGvzmgGIvKQSnu");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment : fixed;
+  transform: rotateX(180deg);
   z-index: 1;
+  
 }
 
 #mainDiv{
-    border: 2px solid black;
+    border: 5px solid black;
     padding: 25px;
-    background-image : url("https://drive.google.com/uc?export=view&id=1OTZIT0nG6cGAObhPfLAlyDN5MK9JDvcH");
-    background-repeat: no-repeat;
-    height: 100% ! important;
+    background-image : url("https://drive.google.com/uc?export=view&id=1MkKjBjMdk7WpZDqhhhxGvzmgGIvKQSnu");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment : fixed;
     
 }
 
+
+
+
 </style>
 
+<style>
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: red;
+    background-color: red;
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 0.9;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}</style>
+
+
+
 <script>
-$(document).ready(function(){
-    
+$(document).ready(function () {
+     var winHeight = $(window).height();
+     $('#mainDiv').css('height', winHeight + 'px');
 });
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
 </script>
 
 </head>
 <body>
 <div id="mainDiv">
 
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer; color : red;" onclick="openNav()">&#9776;</span>
+
+<h3> Engagement invite</h3>
+
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img id="ganeshImgId" src="https://drive.google.com/uc?export=view&id=1uL6D-DrS_3KndYvEEqrmccLjvke8Y70m" width="100%">
+      <img id="ganeshImgId" src="https://drive.google.com/uc?export=view&id=151PpDRp1-f0UiPK7vxNzgr3sXMc2Yp2g" width="100%" height="100%" >
     </div>
     <div class="flip-card-back">
       We heartly invite you and Your Family for family get together.
@@ -81,7 +175,10 @@ $(document).ready(function(){
   </div>
 </div>
 
+
+
 </div>
+
 
 </body>
 </html>
