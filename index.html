@@ -49,10 +49,10 @@ body, html {
 
 .flip-card-back {
   
-  color: white;
+  color: red;
   background-image : url("https://drive.google.com/uc?export=view&id=1MkKjBjMdk7WpZDqhhhxGvzmgGIvKQSnu");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% auto;
     background-attachment : fixed;
   transform: rotateX(180deg);
   z-index: 1;
@@ -69,9 +69,13 @@ body, html {
     
 }
 
+</style>
 
-
-
+<style>
+.responsive {
+    width: 100%;
+    height: auto;
+}
 </style>
 
 <style>
@@ -148,7 +152,7 @@ function closeNav() {
 
 </head>
 <body>
-<div id="mainDiv">
+<div id="mainDiv" class="responsive">
 
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
