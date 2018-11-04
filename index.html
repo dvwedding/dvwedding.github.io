@@ -30,14 +30,18 @@
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Venue</a>
-    <a href="#">E-invitation</a>
-    <a href="#">Images</a>
+    <a href="#" id="linkAbt">About</a>
+	<div class="overlayDiv" id="overlayDivAbout" style="display: none">About</div>
+    <a href="#" id="linkVenue">Venue</a>
+	<div class="overlayDiv" id="overlayDivVenue" style="display: none">Venue</div>
+    <a href="#" id="linkEI">E-invitation</a>
+	<div class="overlayDiv" id="overlayDivEi" style="display: none">E-invitation</div>
+    <a href="#" id="linkImgs">Images</a>
+	<div class="overlayDiv" id="overlayDivImgs" style="display: none">Images</div>
   </div>
 </div>
 
-<span style="font-size:30px;cursor:pointer; color : red;" onclick="openNav()">&#9776;</span>
+<span style="font-size:30px;cursor:pointer; color : red; width: fit-content;" onclick="openNav()">&#9776;</span>
 
 <span class="headings" style=" font-family:Apple Chancery, cursive; color: red;" ><h2> Engagement invite</h2></span>
 
@@ -60,7 +64,7 @@
   </div>
 </div>
 
-<div style="margin-top : 5px ;background : #fff;box-shadow: 0 4px 8px 0 ;rgba(0,0,0,0.2); border-radius: 5px" align="center">
+<div class="cntDwnCls" style="margin-top : 5px ;background : #fff;box-shadow: 0 4px 8px 0 ;rgba(0,0,0,0.2); border-radius: 5px;" align="center">
 <span id="cntDwn" style="font-size:30px; color : red;font-style: oblique;
 }"</span>
 

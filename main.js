@@ -2,6 +2,19 @@ $(document).ready(function () {
      var winHeight = $(window).height();
      $('#mainDiv').css('height', (winHeight * 1.5) + 'px');
      myFunction();
+	 
+	 $("#linkAbt").click(function(){
+		 $("#overlayDivAbout").toggle();
+	 });
+	 $("#linkVenue").click(function(){
+		 $("#overlayDivVenue").toggle();
+	 });
+	 $("#linkEI").click(function(){
+		 $("#overlayDivEi").toggle();
+	 });
+	 $("#linkImgs").click(function(){
+		 $("#overlayDivImgs").toggle();
+	 });
 });
 
 

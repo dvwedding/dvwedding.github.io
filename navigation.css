@@ -1,3 +1,16 @@
+/@media only screen and (min-device-width: 800px) and (max-device-width: 1600px) 
+   {
+	  
+}
+
+/*Mobile and Tablet*/
+@media only screen and (min-device-width: 0px) and (max-device-width: 770px) 
+   {
+	  
+}
+
+
+
 .overlay {
     height: 100%;
     width: 0;
@@ -10,6 +23,7 @@
     overflow-x: hidden;
     transition: 0.5s;
     opacity: 0.9;
+	display: inline-block;
 }
 .overlay-content {
     position: relative;
