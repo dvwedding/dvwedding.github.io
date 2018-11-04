@@ -4,212 +4,18 @@
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/flipCard.css">
+
+<link rel="stylesheet" href="/navigation.css">
+
+<link rel="stylesheet" href="/main.css">
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<style>
-body, html {
-    height: 100%;
-}
+<script src="/main.js"></script>
 
-.flip-card {
-  background-color: transparent;
-  width: 100%;
-  height: 80%;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner,.flip-card:focus .flip-card-inner
- {
-  transform: rotateX(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-  z-index: 2;
-}
-
-.flip-card-back {
-  
-  color: red;
-  background-image : url("https://drive.google.com/uc?export=view&id=1MkKjBjMdk7WpZDqhhhxGvzmgGIvKQSnu");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment : fixed;
-  transform: rotateX(180deg);
-  z-index: 1;
-  
-}
-
-#mainDiv{
-    border: 5px solid black;
-    padding: 25px;
-    overflow: scroll;
-    background-image : url("https://drive.google.com/uc?export=view&id=1MkKjBjMdk7WpZDqhhhxGvzmgGIvKQSnu");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment : fixed;
-    display : flex ;
-    flex-direction: column;
-    
-}
-
-</style>
-
-<style>
-.responsive {
-    width: 100%;
-    height: auto;
-}
-.bg {
-    /* The image used */
-   
-background-image : url("https://drive.google.com/uc?export=view&id=1MkKjBjMdk7WpZDqhhhxGvzmgGIvKQSnu");
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.headings { font-size: 22px; display:table; margin-left: auto; margin-right: auto; }
-
-</style>
-
-<style>
-
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: red;
-    background-color: red;
-    overflow-x: hidden;
-    transition: 0.5s;
-    opacity: 0.9;
-}
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #fff;
-    display: block;
-    transition: 0.3s;
-    font-family:Apple Chancery, cursive;
-}
-
-.overlay a:hover, .overlay a:focus {
-    color: black;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px,font-family:Apple Chancery, cursive;}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}</style>
-
-
-
-<script>
-$(document).ready(function () {
-     var winHeight = $(window).height();
-     $('#mainDiv').css('height', (winHeight * 1.5) + 'px');
-     myFunction();
-});
-
-
-
-</script>
-
-<script>
-function myFunction() {
-    setInterval(
-function(){ 
-
-$(".flip-card").css('border', "10px");
-}, 5000);
-}
-</script>
-
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
-
-<script>
-
-var countDownDate = new Date("Dec 02, 2018 09:00:00").getTime();
-
-var x = setInterval(function() {
-    var now = new Date().getTime();
-    
-    var distance = countDownDate - now;
-    
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    document.getElementById("cntDwn").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "Engaged !!!";
-    }
-}, 1000);
-
-
-
-</script>
 
 </head>
 <body>
@@ -233,7 +39,7 @@ var x = setInterval(function() {
 
 <span class="headings" style=" font-family:Apple Chancery, cursive; color: red;" ><h4>On December 2nd, 2018</h4></span>
 
-<span class="headings" style=" font-family:Apple Chancery, cursive; color: red;" ><h5>Venue: Some place</h5></span>
+<span class="headings" style=" font-family:Apple Chancery, cursive; color: red;" ><h5>Venue: Hotel President, Mysuru</h5></span>
 
 
 <div class="flip-card">
@@ -260,16 +66,3 @@ var x = setInterval(function() {
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
