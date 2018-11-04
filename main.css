@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+}
+
+#mainDiv{
+    border: 5px solid black;
+    padding: 25px;
+    overflow: scroll;
+    background-image : url("https://drive.google.com/uc?export=view&id=1MkKjBjMdk7WpZDqhhhxGvzmgGIvKQSnu");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment : fixed;
+    display : flex ;
+    flex-direction: column;
+    
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+.bg {
+    /* The image used */
+   
+background-image : url("https://drive.google.com/uc?export=view&id=1MkKjBjMdk7WpZDqhhhxGvzmgGIvKQSnu");
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headings { font-size: 22px; display:table; margin-left: auto; margin-right: auto; }
