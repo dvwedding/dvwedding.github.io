@@ -9,8 +9,6 @@
 	  
 }
 
-
-
 .overlay {
     height: 100%;
     width: 0;
@@ -50,6 +48,28 @@
     right: 45px;
     font-size: 60px;
 }
+
+.btn-default {
+  background-color: #000;
+  color: #ffe100;
+}
+.btn-primary {
+  background-color:
+    #ffe100;
+  color: #000;
+}
+
+@keyframes glowing {
+  0% { box-shadow: 0 0 -10px #c4a300; }
+  40% { box-shadow: 0 0 30px red; }
+  60% { box-shadow: 0 0 30px red; }
+  100% { box-shadow: 0 0 -10px #c4a300; }
+}
+
+.div-glow {
+  animation: glowing 5000ms infinite;
+}
+
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px,font-family:Apple Chancery, cursive;}
   .overlay .closebtn {
