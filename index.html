@@ -30,7 +30,8 @@ body, html {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner,.flip-card:focus .flip-card-inner
+ {
   transform: rotateX(180deg);
 }
 
@@ -127,6 +128,7 @@ background-image : url("https://drive.google.com/uc?export=view&id=1MkKjBjMdk7Wp
     color: #fff;
     display: block;
     transition: 0.3s;
+    font-family:Apple Chancery, cursive;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -141,7 +143,7 @@ background-image : url("https://drive.google.com/uc?export=view&id=1MkKjBjMdk7Wp
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {font-size: 20px,font-family:Apple Chancery, cursive;}
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
@@ -155,9 +157,21 @@ background-image : url("https://drive.google.com/uc?export=view&id=1MkKjBjMdk7Wp
 $(document).ready(function () {
      var winHeight = $(window).height();
      $('#mainDiv').css('height', (winHeight * 1.5) + 'px');
-     
- 
+     myFunction();
 });
+
+
+
+</script>
+
+<script>
+function myFunction() {
+    setInterval(
+function(){ 
+
+$(".flip-card").css('border', "10px");
+}, 5000);
+}
 </script>
 
 <script>
@@ -192,6 +206,9 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "Engaged !!!";
     }
 }, 1000);
+
+
+
 </script>
 
 </head>
@@ -202,9 +219,9 @@ var x = setInterval(function() {
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
     <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="#">Venue</a>
+    <a href="#">E-invitation</a>
+    <a href="#">Images</a>
   </div>
 </div>
 
@@ -225,7 +242,7 @@ var x = setInterval(function() {
       <img id="ganeshImgId" src="https://drive.google.com/uc?export=view&id=151PpDRp1-f0UiPK7vxNzgr3sXMc2Yp2g" width="100%" height="100%" >
     </div>
     <div class="flip-card-back bg">
-      We heartly invite you and Your Family for family get together.
+      <img id="invtnImgId" src="https://drive.google.com/uc?export=view&id=1z6JRnqY5EZ0qZMISi5rkN088buQag514" width="100%" height="100%" >
     </div>
   </div>
 </div>
