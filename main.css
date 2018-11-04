@@ -22,7 +22,9 @@ body, html {
 .overlayDiv{
 	width:80%;
 	margin: 0 10%;
-	background: #fff;
+	background: #ffff99;
+	border-radius: 0px 200px 0px;
+    padding: 20px;
 }
 
 
