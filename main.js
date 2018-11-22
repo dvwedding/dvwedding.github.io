@@ -83,9 +83,7 @@ $('html body').keydown(function(e) {
 function flipCard() {
     setInterval(
 function(){ 
-$(".flip-card-inner").css({
-	transform: rotateX(180deg);
-});
+$(".flip-card-inner").toggleClass("doFlip");
 }, 5000);
 }
 
