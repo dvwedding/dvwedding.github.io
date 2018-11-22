@@ -81,12 +81,19 @@ $('html body').keydown(function(e) {
 	 
 });
 function flipCard() {
-    setInterval(
-function(){ 
+    setInterval(flip1, 3000);
+	setInterval(flip2, 6000);
+}
+function flip1(){ 
 $(".flip-card .flip-card-inner").css({
 	"transform" : "rotateX(180deg)"
 });
-}, 5000);
+}
+
+function flip2(){ 
+$(".flip-card .flip-card-inner").css({
+	"transform" : "rotateX(0deg)"
+});
 }
 
 function myFunction() {
