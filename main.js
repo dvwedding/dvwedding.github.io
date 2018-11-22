@@ -94,7 +94,7 @@ function flip2(){
 $(".flip-card .flip-card-inner").css({
 	"transform" : "rotateX(0deg)"
 }).promise().done(function() {
-	setTimeout(flip1, 9000);
+	setTimeout(flip1, 5000);
 
 });;
 }
