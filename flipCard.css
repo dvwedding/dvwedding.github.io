@@ -17,7 +17,7 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin-left: 30%;
 }
-.flip-card:hover .flip-card-inner,.flip-card:focus .flip-card-inner
+.flip-card:hover .flip-card-inner,.flip-card:focus .flip-card-inner, .flip-card-inner.doFlip
  {
   transform: rotateX(180deg);
 }
