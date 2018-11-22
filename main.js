@@ -81,8 +81,8 @@ $('html body').keydown(function(e) {
 	 
 });
 function flipCard() {
-    setInterval(flip1, 3000);
-	setInterval(flip2, 6000);
+    setInterval(flip1, 7000);
+	setInterval(flip2, 14000);
 }
 function flip1(){ 
 $(".flip-card .flip-card-inner").css({
