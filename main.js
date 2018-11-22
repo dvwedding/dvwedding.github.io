@@ -85,7 +85,7 @@ function flip1(){
 $(".flip-card .flip-card-inner").css({
 	"transform" : "rotateX(180deg)"
 }).promise().done(function() {
-	setTimeout(flip2, 14000);
+	setTimeout(flip2, 18000);
 
 });
 }
