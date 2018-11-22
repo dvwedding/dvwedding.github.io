@@ -87,8 +87,9 @@ function flipCard() {
 function flip1(){ 
 $(".flip-card .flip-card-inner").css({
 	"transform" : "rotateX(180deg)"
+}).promise().done(function() {
+setInterval(flip2, 7000);
 });
-setInterval(flip1, 18000);
 }
 
 function flip2(){ 
