@@ -78,14 +78,14 @@ $('html body').keydown(function(e) {
 	 
 });
 function flipCard() {
-    setTimeout(flip1, 3000);
+    setTimeout(flip1, 5000);
 	
 }
 function flip1(){ 
 $(".flip-card .flip-card-inner").css({
 	"transform" : "rotateX(180deg)"
 }).promise().done(function() {
-	setTimeout(flip2, 5000);
+	setTimeout(flip2, 9000);
 
 });
 }
@@ -94,7 +94,7 @@ function flip2(){
 $(".flip-card .flip-card-inner").css({
 	"transform" : "rotateX(0deg)"
 }).promise().done(function() {
-	setTimeout(flip1, 5000);
+	setTimeout(flip1, 9000);
 
 });;
 }
