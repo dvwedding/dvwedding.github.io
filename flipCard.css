@@ -37,10 +37,10 @@
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-.flip-card:hover .flip-card-inner,.flip-card:focus .flip-card-inner
+/*.flip-card:hover .flip-card-inner,.flip-card:focus .flip-card-inner
  {
   transform: rotateX(180deg);
-}
+}*/
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -51,6 +51,7 @@
   background-color: #bbb;
   color: black;
   z-index: 2;
+  transform: rotateY(0deg);
 }
 .flip-card-back {
   
@@ -75,18 +76,39 @@
   perspective: 1000px;
 }
 .flip-card-inner {
+  -webkit-animation-name: flip;
+          animation-name: flip;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.flip-card-inner {
   position: absolute;
-  width: 100%;
+  width: 50%;
   height: 100%;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 3s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-left: 30%;
+  
+  -webkit-animation-name: flip;
+  animation-name: flip;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
-.flip-card:hover .flip-card-inner,.flip-card:focus .flip-card-inner
+/*.flip-card:hover .flip-card-inner,.flip-card:focus .flip-card-inner
  {
   transform: rotateX(180deg);
-}
+}*/
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -97,6 +119,7 @@
   background-color: #bbb;
   color: black;
   z-index: 2;
+  transform: rotateY(0deg);
 }
 .flip-card-back {
   
