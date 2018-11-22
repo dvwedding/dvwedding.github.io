@@ -75,9 +75,6 @@ $('html body').keydown(function(e) {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 	
-		flipCard();
-	 
-	 
 	 
 });
 function flipCard() {
@@ -88,6 +85,7 @@ function flip1(){
 $(".flip-card .flip-card-inner").css({
 	"transform" : "rotateX(180deg)"
 }).promise().done(function() {
+	
 setInterval(flip2, 7000);
 });
 }
