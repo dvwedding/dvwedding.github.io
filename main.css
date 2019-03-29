@@ -79,7 +79,15 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;*/
 }
-.headings { font-size: 22px; display:table; margin-left: auto; margin-right: auto; text-align: center; }
+.headings { font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: transparent;
+    /* width: 100%; */
+    /* height: 70%; */
+    perspective: 700px;
+    display: table !important; }
 
 html body .heading a .fab {
   margin-right: 0.5rem;
