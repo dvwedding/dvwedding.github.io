@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/flipCard.css">
+<link rel="stylesheet" href="/navigation.css">
+<link rel="stylesheet" href="/flipAnimtn.css">
+<link rel="stylesheet" href="/main.css">
+<script src="/main.js"></script>
+
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo" width="100%">
+  <source src="https://drive.google.com/uc?export=view&id=1tL3YiNGR-R5EIlFThnSDxzvl2xech09f" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div id="mainDiv" class="bg">
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#" id="linkAbt">About</a>
+	<div class="overlayDiv" id="overlayDivAbout" style="display: none">
+	<p>This is a e-invitation initiative towards savE papEr - savE Earth program.</p>
+	<p> Thank You for being part of it.  </p>
+	</div>
+    <a href="#" id="linkVenue">Venue</a>
+	<div class="overlayDiv" id="overlayDivVenue" style="display: none">
+	
+	<h4><a href="https://goo.gl/maps/hpUAGDQJWey" style="font-family:Apple Chancery, cursive;color: blue">Rajendra Kalyana Mandira,Ramanuja Road, Near JSS Hospital,Mysuru</a></h4>
+	<h5>Click above link to navigate</h5>
+	</div>
+    <a href="#" id="linkEI">e-invitation</a>
+	<div class="overlayDiv" id="overlayDivEi" style="display: none">
+		<!--<a href="https://drive.google.com/uc?export=download&id=10EGz-LuR2n_VS7qiUej9Zoy3MKvEZEH-">Click to get e-invitation 1</a>-->
+		<a  style="color: blue;"href="https://nbviewer.jupyter.org/github/dvwedding/dvwedding.github.io/blob/master/Invitations/Divya-Vishwa_Engagement_Invitation.pdf">Click to get e-invitation </a>
+	</div>
+   
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer;color : red;width: fit-content;background-color: transparent;/* width: 100%; *//* height: 70%; */perspective: 700px;display: table !important;" onclick="openNav()">&#9776;</span>
+
+<span class="headings" style=" font-family:Apple Chancery, cursive; color: red;" ><a href="https://nbviewer.jupyter.org/github/dvwedding/dvwedding.github.io/blob/master/Invitations/Divya-Vishwa_Engagement_Invitation.pdf"> 
+<h2 style=" font-family:Apple Chancery, cursive; color: red;"> Wedding Invitation</h2>
+<h6>(Click to get e-Invitation)</h6>
+</a></span>
+
+<span class="headings" style=" font-family:Apple Chancery, cursive; color: red;" ><h3> Divya with Vishwa</h3></span>
+
+<span class="headings" style=" font-family:Apple Chancery, cursive; color: red;" ><h4>Reception : Sunday, 14th March 2019 07:30 pm onwoards.</h4></span>
+<span class="headings" style=" font-family:Apple Chancery, cursive; color: red;" ><h4>Dhara Muhurtham: Monday, 15th March 2019 09:00 am to 10:00 am.</h4></span>
+
+<span class="headings" style=" font-family:Apple Chancery, cursive;  text-decoration: underline;" >
+<a href="https://goo.gl/maps/hpUAGDQJWey"><h4>Venue: Rajendra Kalyana Mandira,Ramanuja Road, Near JSS Hospital,Mysuru</h4><h6>(Click to navigate)</h6></a>
+</span>
+
+<br>
+<br>
+ 
+<div class="flip-card" ontouchstart="this.classList.toggle('hover');">
+  <div class="flip-card-inner div-glow">
+    <div class="flip-card-front ">
+      <img id="ganeshImgId"  src="https://drive.google.com/uc?export=view&id=151PpDRp1-f0UiPK7vxNzgr3sXMc2Yp2g" width="100%" height="100%" >
+    </div>
+    <div class="flip-card-back bg">
+      <img id="invtnImgId" onload="flipCard();" src="https://drive.google.com/uc?export=view&id=1o46_vg1vny5jyk1N69-bHbITkm5y8er9" width="100%" height="100%" >
+    </div>
+  </div>
+</div>
+ 
+ <!--
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+    <div class="flipper div-glow">
+        <div class="front">
+        
+		 <img id="ganeshImgId" src="https://drive.google.com/uc?export=view&id=151PpDRp1-f0UiPK7vxNzgr3sXMc2Yp2g" width="100%" height="100%" >
+        </div>
+        <div class="back">
+        
+		<img id="invtnImgId" src="https://drive.google.com/uc?export=view&id=1z6JRnqY5EZ0qZMISi5rkN088buQag514" width="100%" height="100%" >
+        </div>
+    </div>
+</div>
+-->
+
+<div class="cntDwnCls" style="margin-top : 5px ;background : #fff;box-shadow: 0 4px 8px 0 ;rgba(0,0,0,0.2); border-radius: 5px;" align="center">
+<span id="cntDwn" style="font-size:30px; color : red;font-style: oblique;">Thanks for coming.</span>
+
+<div/>
+
+
+
+</div>
+
+
+</body>
+</html>

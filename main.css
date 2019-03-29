@@ -4,7 +4,6 @@
 		width: 50%;
 		margin-left:30%;
 	}
-	
 }
 
 /*Mobile and Tablet*/
@@ -14,29 +13,7 @@
 		width: 100%;
 	}
 }
-#myVideo {
-   /* Make video to at least 100% wide and tall */
-  min-width: 100%; 
-  min-height: 100%; 
 
-  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-  width: auto;
-  height: auto;
-
-  /* Center the video */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-body{
-position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%; 
-  overflow: hidden;
-}
 
 body, html {
     height: 100%;
@@ -55,10 +32,10 @@ body, html {
     border: 5px solid black;
     padding: 25px;
     overflow: scroll;
-   /* background-image : url("https://drive.google.com/uc?export=view&id=1B2_n5zwQkEIDlNwi1aIS-4NyZxLxQB5w");
+    background-image : url("https://drive.google.com/uc?export=view&id=1B2_n5zwQkEIDlNwi1aIS-4NyZxLxQB5w");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment : fixed;*/
+    background-attachment : fixed;
     display : flex ;
     flex-direction: column;
     
@@ -71,23 +48,15 @@ body, html {
 .bg {
     /* The image used */
    
-/*background-image : url("https://drive.google.com/uc?export=view&id=1B2_n5zwQkEIDlNwi1aIS-4NyZxLxQB5w");*/
+background-image : url("https://drive.google.com/uc?export=view&id=1B2_n5zwQkEIDlNwi1aIS-4NyZxLxQB5w");
     /* Full height */
     height: 100%; 
     /* Center and scale the image nicely */
-    /*background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: cover;
 }
-.headings { font-size: 22px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: transparent;
-    /* width: 100%; */
-    /* height: 70%; */
-    perspective: 700px;
-    display: table !important; }
+.headings { font-size: 22px; display:table; margin-left: auto; margin-right: auto; text-align: center; }
 
 html body .heading a .fab {
   margin-right: 0.5rem;
