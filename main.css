@@ -4,6 +4,13 @@
 		width: 50%;
 		margin-left:30%;
 	}
+	#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
 }
 
 /*Mobile and Tablet*/
@@ -13,7 +20,13 @@
 		width: 100%;
 	}
 }
-
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
 
 body, html {
     height: 100%;
