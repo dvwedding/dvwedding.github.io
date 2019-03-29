@@ -1,3 +1,11 @@
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
 @media only screen and (min-device-width: 800px) and (max-device-width: 1600px) 
    {
 	.cntDwnCls{
@@ -28,7 +36,7 @@ body, html {
 }
 
 
-#mainDiv{
+/*#mainDiv{
     border: 5px solid black;
     padding: 25px;
     overflow: scroll;
@@ -39,13 +47,13 @@ body, html {
     display : flex ;
     flex-direction: column;
     
-}
+}*/
 
 .responsive {
     width: 100%;
     height: auto;
 }
-.bg {
+.bg1 {
     /* The image used */
    
 background-image : url("https://drive.google.com/uc?export=view&id=1B2_n5zwQkEIDlNwi1aIS-4NyZxLxQB5w");
@@ -55,7 +63,7 @@ background-image : url("https://drive.google.com/uc?export=view&id=1B2_n5zwQkEID
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+}*/
 .headings { font-size: 22px; display:table; margin-left: auto; margin-right: auto; text-align: center; }
 
 html body .heading a .fab {
