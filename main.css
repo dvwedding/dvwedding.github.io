@@ -4,6 +4,9 @@
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  
 }
 
 @media only screen and (min-device-width: 800px) and (max-device-width: 1600px) 
@@ -46,6 +49,7 @@ body, html {
     background-attachment : fixed;
     display : flex ;
     flex-direction: column;
+	back
     
 }
 
