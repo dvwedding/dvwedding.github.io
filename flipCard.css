@@ -79,6 +79,7 @@
   background-color: #bbb;
   color: black;
   z-index: 2;
+  display: none;
 }
 .flip-card-back {
   
