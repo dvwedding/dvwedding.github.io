@@ -115,11 +115,11 @@ function closeNav() {
 
 //For CountDown
 
-var countDownDate = new Date("Dec 02, 2018 10:30:00").getTime();
+var countDownDate = new Date("April 14, 2019 19:30:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     
-    var distance = now - countDownDate;
+    var distance =countDownDate - now;
     
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -131,7 +131,7 @@ var x = setInterval(function() {
     
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "Engaged !!!";
+        document.getElementById("demo").innerHTML = "Happily Married !!!";
     }
 }, 1000);
 
